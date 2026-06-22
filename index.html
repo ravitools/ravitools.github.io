@@ -3,6 +3,8 @@
 <head>
 <title>Ravi Tools</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
@@ -14,8 +16,25 @@ body{
 .header{
     background:#003366;
     color:white;
-    padding:30px;
     text-align:center;
+    padding:40px;
+}
+
+.navbar{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:yellow;
 }
 
 .section{
@@ -26,10 +45,10 @@ body{
 
 .card{
     background:white;
-    padding:20px;
+    padding:25px;
     margin-bottom:20px;
     border-radius:10px;
-    box-shadow:0px 0px 10px lightgray;
+    box-shadow:0 0 10px #ccc;
 }
 
 .btn{
@@ -38,6 +57,11 @@ body{
     padding:10px 20px;
     text-decoration:none;
     border-radius:5px;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#004080;
 }
 
 .footer{
@@ -45,6 +69,16 @@ body{
     color:white;
     text-align:center;
     padding:15px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:180px;
+    border-radius:50%;
+    border:4px solid #003366;
 }
 
 </style>
@@ -55,51 +89,36 @@ body{
 
 <div class="header">
     <h1>Ravi Tools</h1>
-
-    <h3>
-    Civil Engineering, AutoCAD &
-    SP3D Automation Solutions
-    </h3>
-
-    <p>
-    Developed by Ravindra Gurav
-    </p>
+    <h3>Civil Engineering, AutoCAD & SP3D Automation Solutions</h3>
+    <p>Developed by Ravindra Gurav</p>
 </div>
 
-<div style="background:#222;padding:15px;text-align:center;">
-    <a href="#about"
-       style="color:white;margin:20px;text-decoration:none;">About</a>
-
-    <a href="#downloads"
-       style="color:white;margin:20px;text-decoration:none;">Downloads</a>
-
-    <a href="#projects"
-       style="color:white;margin:20px;text-decoration:none;">Projects</a>
-
-    <a href="#contact"
-       style="color:white;margin:20px;text-decoration:none;">Contact</a>
+<div class="navbar">
+    <a href="#about">About</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
 </div>
 
 <div class="section">
 
 <div class="card" id="about">
 
-<center>
-<img src="images/ravindra.jpg"
-     width="180"
-     style="border-radius:50%;
-            border:4px solid #003366;">
-</center>
+<div class="profile">
 
-<h2>About Me</h2>
+<!-- Upload image later -->
+<!-- <img src="images/ravindra.jpg"> -->
+
+<h2>Ravindra Gurav</h2>
 
 <p>
-<b>Ravindra Gurav</b><br>
 Senior Civil Structural Designer<br>
-28 Years Experience<br><br>
-
-Specialized in:
+28+ Years Experience
 </p>
+
+</div>
+
+<h3>Specialization</h3>
 
 <ul>
 <li>AutoCAD Automation</li>
@@ -107,6 +126,7 @@ Specialized in:
 <li>Civil BOQ Extraction</li>
 <li>Anchor Bolt Design Tools</li>
 <li>Concrete MTO Tools</li>
+<li>Steel Quantity Extraction</li>
 </ul>
 
 </div>
@@ -129,7 +149,7 @@ Download</a>
 <h3>Concrete MTO Extractor</h3>
 
 <p>
-Extract concrete quantities directly from AutoCAD drawings.
+AutoCAD concrete quantity extraction tool.
 </p>
 
 <a class="btn" href="#">
@@ -140,7 +160,7 @@ Download</a>
 <h3>SP3D Utilities</h3>
 
 <p>
-Automation tools for SmartPlant 3D workflows.
+Automation tools for SmartPlant 3D.
 </p>
 
 <a class="btn" href="#">
@@ -149,18 +169,16 @@ Download</a>
 </div>
 
 <div class="card" id="projects">
+
 <h2>Projects</h2>
 
-<p>
-Custom Engineering Tools for:
-</p>
-
 <ul>
-<li>AutoCAD Plant 3D</li>
-<li>SP3D</li>
-<li>Civil Foundations</li>
-<li>Steel Structures</li>
-<li>Concrete Quantity Extraction</li>
+<li>AutoCAD Plant 3D Automation</li>
+<li>Concrete MTO Extraction</li>
+<li>Anchor Bolt Calculator</li>
+<li>SP3D Customization</li>
+<li>Steel Structure BOQ Tools</li>
+<li>Civil Foundation Design Utilities</li>
 </ul>
 
 </div>
@@ -170,7 +188,7 @@ Custom Engineering Tools for:
 <h2>Contact</h2>
 
 <p>
-📧 Email:
+Email:
 <a href="mailto:ravw85yu@gmail.com">
 ravw85yu@gmail.com
 </a>
@@ -188,7 +206,7 @@ ravitools.github.io
 </div>
 
 <div class="footer">
-© 2026 Ravi Tools
+© 2026 Ravi Tools | All Rights Reserved
 </div>
 
 </body>
